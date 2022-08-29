@@ -36,6 +36,11 @@
     margin-right: 150px;
 }
 
+.fa-bars{
+    margin-right: 50px;
+    visibility: hidden;
+}
+
 .list-item{
     font-size: 12px;
     margin:0px 20px;
@@ -78,10 +83,9 @@
 }
 
 .page2{
-    height: 100vh;
     background: linear-gradient(to right, #181818 0%, #181818 50%, #111111 50%, #111111 100%);
-
 }
+
 .page2 .top{    
     padding-top: 100px;
     display: flex;
@@ -91,9 +95,9 @@
 
 .card{
     padding: 30px 30px;
-    width: 12vw;
+    width: 180px;
     background-color: #1E1E1E;
-    margin: 0px 5px;
+    margin: 5px 5px;
 }
 
 .card2{
@@ -131,7 +135,7 @@
 
 .col{
     text-align: center;
-    width: 15.8vw;
+    width: 240px;
     margin: 0px 5px;
 }
 
@@ -189,8 +193,8 @@
     justify-content: center;
     align-items: center;
     background-color: #1E1E1E;
-    height: 40vh;
-    width: 30vw;
+    height: 300px;
+    width: 450px;
     padding: 50px 50px;
     margin: 20px;
 }
@@ -212,6 +216,7 @@
 .page3 .bottom{
     padding-top: 100px;
 }
+
 .page3 .bottom .bg{
     display: flex;
     justify-content: space-between;
@@ -257,6 +262,7 @@ footer{
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #1E1E1E;
 }
 
@@ -267,10 +273,211 @@ footer .logo2{
 
 footer .icons{
     width: 100px;
-    margin-left: 450px;
+    margin-right: 700px;
 }
 
 footer .icons i{
     margin: 0px 5px;
+    
 }
 
+@media screen and (max-width:1300px) {
+
+    .page1 .col-left img{
+        width: 600px;
+        margin-left: 100px;
+    }
+
+    .page3 .bottom .bg .col-left{
+        margin-right: 150px;
+    } 
+
+    footer .icons{
+        width: 100px;
+        margin-right: 550px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .logo{
+        width: 100px;
+        margin-left: 50px;
+    }
+    
+    .list-items{
+        margin-right: 50px;
+    }
+
+    .page1 .col-left img{
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .page3 .bottom .bg .col-left{
+        margin-right: 50px;
+    } 
+
+    .page3 .bottom .bg .col-left h1{
+        font-size: 30px;
+    }
+
+    .page3 .bottom .bg .col-right button{
+        margin-right: 50px;
+    }
+
+    footer .icons{
+        width: 100px;
+        margin-right: 400px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+
+    .fa-bars{
+        margin-right: 50px;
+        visibility: visible;
+    }
+
+    .list-items{
+        display: none;
+    }
+
+
+    .page1 .col-left img{
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    .page1 .col-right{
+        margin-right: 50px;
+    }
+
+    .page1 .col-right h1{
+        font-size: 30px;
+    }
+
+    .page3{
+        margin: 100px 50px 0px 50px;
+    }
+
+    .page3 .bottom .bg .col-left{
+        margin-right: 20px;
+    } 
+
+    .page3 .bottom .bg .col-left h1{
+        font-size: 30px;
+    }
+
+    .page3 .bottom .bg .col-right button{
+        margin-right: 0px;
+    }
+
+    footer .logo2{
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    footer .icons{
+        width: 100px;
+        margin-right: 300px;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+
+.page1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 .col-left img{
+    width: 300px;
+    margin-left: 0px;
+}
+
+.page1 .col-right{
+    margin-left: 50px;
+}
+
+.page2 .bottom{    
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3{
+    margin: 100px 50px 0px 50px;
+}
+
+.page3 .top{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3 button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.page3 .middle .part .bg{
+    height: 120px;
+    width: 250px;
+    padding: 50px 50px;
+    margin: 10px;
+}
+
+.page3 .middle .part img{
+    width: 300px;
+}
+
+.page3 .bottom .bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.page3 .bottom .bg .col-left{
+    margin-right: 0px;
+} 
+
+.page3 .bottom .bg .col-left h1{
+    font-size: 20px;
+}
+
+.page3 .bottom .bg .col-right button{
+    margin-right: 0px;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logo2{
+    width: 100px;
+    margin-left: 0px;
+}
+
+footer .icons{
+    margin-top: 30px;
+    width: 100px;
+    margin-right: 0px;
+}
+
+}
